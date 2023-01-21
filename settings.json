@@ -115,5 +115,8 @@
   "vim.visualstar": true,
   "vim.hlsearch": true,
   "vim.whichwrap": "h,l,<,>,[,],b,s",
-  "vim.useSystemClipboard": true
+  "vim.useSystemClipboard": true,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }
