@@ -65,17 +65,71 @@
     },
     {
       "before": [";", ";"],
-      "after": ["editor.action.triggerSuggest"]
+      "after": [{ "command": "editor.action.triggerSuggest" }]
     },
     {
-        "before": ["g", "h"],
-        "after": [{"command": "editor.action.showDefinitionPreviewHover"}]
+      "before": ["g", "h"],
+      "after": [{ "command": "editor.action.showDefinitionPreviewHover" }]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "commands": [{ "command": "cursorUndo" }]
+    },
+    {
+      "before": ["<leader>", "k", "d"],
+      "commands": [{ "command": "editor.action.moveSelectionToNextFindMatch" }]
+    },
+    {
+      "before": ["<leader>", "k", "e"],
+      "commands": [
+        { "command": "editor.action.moveSelectionToPreviousFindMatch" }
+      ]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": [{ "command": "editor.action.selectHighlights" }]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["x"],
       "after": ["\"", "_", "x"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "d"],
+      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "commands": [{ "command": "cursorUndo" }]
+    },
+    {
+      "before": ["<leader>", "k", "d"],
+      "commands": [{ "command": "editor.action.moveSelectionToNextFindMatch" }]
+    },
+    {
+      "before": ["<leader>", "k", "e"],
+      "commands": [
+        { "command": "editor.action.moveSelectionToPreviousFindMatch" }
+      ]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": [{ "command": "editor.action.selectHighlights" }]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -90,6 +144,14 @@
     {
       "before": ["<"],
       "after": ["<", "g", "v"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
     }
   ],
   "vim.operatorPendingModeKeyBindings": [
