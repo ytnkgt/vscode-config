@@ -39,15 +39,23 @@
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "rgba(0, 0, 0, 0.7)",
   "vim.easymotionMarkerForegroundColorOneChar": "pink",
-  "vim.easymotionMarkerWidthPerChar": 12,
-  "vim.easymotionMarkerHeight": 24,
-  "vim.easymotionMarkerFontSize": "24",
-  "vim.easymotionMarkerYOffset": 5,
   "vim.surround": true,
   "vim.normalModeKeyBindings": [
     {
+      "before": ["f"],
+      "after": ["<leader>", "<leader>", "f", "<char>"]
+    },
+    {
       "before": ["s"],
       "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<leader>", "<leader>", "k"]
     },
     {
       "before": ["L"],
@@ -107,6 +115,22 @@
     }
   ],
   "vim.visualModeKeyBindings": [
+    {
+      "before": ["f"],
+      "after": ["<leader>", "<leader>", "f", "<char>"]
+    },
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<leader>", "<leader>", "k"]
+    },
     {
       "before": ["<leader>", "d"],
       "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
@@ -182,10 +206,5 @@
   "vim.useSystemClipboard": true,
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#5f0000",
-    "statusBar.noFolderBackground": "#5f0000",
-    "statusBar.debuggingBackground": "#5f0000"
   }
 }
