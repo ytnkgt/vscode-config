@@ -34,6 +34,8 @@
     "<C-c>": false,
     "<C-k>": false
   },
+  "vim.autoindent": true,
+  "vim.statusBarColorControl": false,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "rgba(0, 0, 0, 0.7)",
   "vim.easymotionMarkerForegroundColorOneChar": "pink",
@@ -180,5 +182,10 @@
   "vim.useSystemClipboard": true,
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#5f0000",
+    "statusBar.noFolderBackground": "#5f0000",
+    "statusBar.debuggingBackground": "#5f0000"
   }
 }
