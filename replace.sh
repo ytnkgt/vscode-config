@@ -8,22 +8,16 @@
 # 2. move the old settings in project root to vscode folder
 # 3. rename the settings in project root
 # 4. execute deploy script to backup the old settings in vscode folder and move the local settings back
-
-script_home=$(cd $(dirname $0) && pwd)
-
-if [ "$OSTYPE" == "msys" ]; then
-    code_path="$USERPROFILE/appdata/roaming/code/user"
-    echo $code_path
-fi
+source setenv.sh
 
 # replace settings.json on vscode folder
-mv "$code_path/settings.json" "$script_home/settings.json.bk"
-mv "$script_home/settings.json" "$code_path/settings.json"
-mv "$script_home/settings.json.bk" "$script_home/settings.json"
+mv "$code_path/settings.json" "$setting_folder/settings.json.bk"
+mv "$setting_folder/settings.json" "$code_path/settings.json"
+mv "$setting_folder/settings.json.bk" "$setting_folder/settings.json"
 
 # replace keybindings.json on vscode folder
-mv "$code_path/keybindings.json" "$script_home/keybindings.json.bk"
-mv "$script_home/keybindings.json" "$code_path/keybindings.json"
-mv "$script_home/keybindings.json.bk" "$script_home/keybindings.json"
+mv "$code_path/keybindings.json" "$setting_folder/keybindings.json.bk"
+mv "$setting_folder/keybindings.json" "$code_path/keybindings.json"
+mv "$setting_folder/keybindings.json.bk" "$setting_folder/keybindings.json"
 
 bash deploy.sh
