@@ -1,0 +1,119 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.renderWhitespace": "all",
+  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-w>": false,
+    "<C-a>": false,
+    "<C-x>": false,
+    "<C-c>": false,
+    "<C-k>": false
+  },
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "rgba(0, 0, 0, 0.7)",
+  "vim.easymotionMarkerForegroundColorOneChar": "pink",
+  "vim.easymotionMarkerWidthPerChar": 12,
+  "vim.easymotionMarkerHeight": 24,
+  "vim.easymotionMarkerFontSize": "24",
+  "vim.easymotionMarkerYOffset": 5,
+  "vim.surround": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["u"],
+      "commands": [{ "command": "undo" }]
+    },
+    {
+      "before": ["<c-r>"],
+      "commands": [{ "command": "redo" }]
+    },
+    {
+      "before": [";", ";"],
+      "after": ["editor.action.triggerSuggest"]
+    },
+    {
+        "before": ["g", "h"],
+        "after": [{"command": "editor.action.showDefinitionPreviewHover"}]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["\"", "_", "d", "P"]
+    },
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": [";", ";"],
+      "commands": ["editor.action.triggerSuggest"]
+    }
+  ],
+  "vim.visualstar": true,
+  "vim.hlsearch": true,
+  "vim.whichwrap": "h,l,<,>,[,],b,s",
+  "vim.useSystemClipboard": true
+}
