@@ -17,9 +17,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "editor.renderWhitespace": "all",
   "editor.minimap.enabled": false,
   "files.trimTrailingWhitespace": true,
@@ -41,164 +39,58 @@
   "vim.easymotionMarkerForegroundColorOneChar": "pink",
   "vim.surround": true,
   "vim.normalModeKeyBindings": [
-    {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "f", "<char>"]
-    },
-    {
-      "before": ["s"],
-      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"]
-    },
-    {
-      "before": ["<C-j>"],
-      "after": ["<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["<C-k>"],
-      "after": ["<leader>", "<leader>", "k"]
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": ["u"],
-      "commands": [{ "command": "undo" }]
-    },
-    {
-      "before": ["<c-r>"],
-      "commands": [{ "command": "redo" }]
-    },
-    {
-      "before": [";", ";"],
-      "after": [{ "command": "editor.action.triggerSuggest" }]
-    },
-    {
-      "before": ["g", "h"],
-      "after": [{ "command": "editor.action.showDefinitionPreviewHover" }]
-    },
-    {
-      "before": ["<leader>", "d"],
-      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
-    },
-    {
-      "before": ["<leader>", "e"],
-      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
-    },
-    {
-      "before": ["<leader>", "u"],
-      "commands": [{ "command": "cursorUndo" }]
-    },
-    {
-      "before": ["<leader>", "k", "d"],
-      "commands": [{ "command": "editor.action.moveSelectionToNextFindMatch" }]
-    },
-    {
-      "before": ["<leader>", "k", "e"],
-      "commands": [
-        { "command": "editor.action.moveSelectionToPreviousFindMatch" }
-      ]
-    },
-    {
-      "before": ["<leader>", "l"],
-      "commands": [{ "command": "editor.action.selectHighlights" }]
-    }
+    { "before": ["f"], "after": ["<leader>", "<leader>", "f", "<char>"] },
+    { "before": ["s"], "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"] },
+    { "before": ["<C-j>"], "after": ["<leader>", "<leader>", "j"] },
+    { "before": ["<C-k>"], "after": ["<leader>", "<leader>", "k"] },
+    { "before": ["L"], "after": ["$"] },
+    { "before": ["H"], "after": ["^"] },
+    { "before": ["u"], "commands": [{ "command": "undo" }] },
+    { "before": ["<c-r>"], "commands": [{ "command": "redo" }] },
+    { "before": [";", ";"], "after": [{ "command": "editor.action.triggerSuggest" }] },
+    { "before": ["g", "h"], "after": [{ "command": "editor.action.showDefinitionPreviewHover" }] },
+    { "before": ["<leader>", "d"], "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }] },
+    { "before": ["<leader>", "e"], "commands": [{ "command": "editor.action.addSelectionToPreviousFindMatch" }] },
+    { "before": ["<leader>", "u"], "commands": [{ "command": "cursorUndo" }] },
+    { "before": ["<leader>", "k", "d"], "commands": [{ "command": "editor.action.moveSelectionToNextFindMatch" }] },
+    { "before": ["<leader>", "k", "e"], "commands": [{ "command": "editor.action.moveSelectionToPreviousFindMatch" }] },
+    { "before": ["<leader>", "l"], "commands": [{ "command": "editor.action.selectHighlights" }] }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["x"],
-      "after": ["\"", "_", "x"]
-    }
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["c"], "after": ["\"", "_", "c"] },
+    { "before": ["d"], "after": ["\"", "_", "d"] },
+    { "before": ["<leader>", "<leader>", "d"], "after": ["d"] }
   ],
   "vim.visualModeKeyBindings": [
-    {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "f", "<char>"]
-    },
-    {
-      "before": ["s"],
-      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"]
-    },
-    {
-      "before": ["<C-j>"],
-      "after": ["<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["<C-k>"],
-      "after": ["<leader>", "<leader>", "k"]
-    },
-    {
-      "before": ["<leader>", "d"],
-      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
-    },
-    {
-      "before": ["<leader>", "e"],
-      "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }]
-    },
-    {
-      "before": ["<leader>", "u"],
-      "commands": [{ "command": "cursorUndo" }]
-    },
-    {
-      "before": ["<leader>", "k", "d"],
-      "commands": [{ "command": "editor.action.moveSelectionToNextFindMatch" }]
-    },
-    {
-      "before": ["<leader>", "k", "e"],
-      "commands": [
-        { "command": "editor.action.moveSelectionToPreviousFindMatch" }
-      ]
-    },
-    {
-      "before": ["<leader>", "l"],
-      "commands": [{ "command": "editor.action.selectHighlights" }]
-    }
+    { "before": ["f"], "after": ["<leader>", "<leader>", "f", "<char>"] },
+    { "before": ["s"], "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"] },
+    { "before": ["<C-j>"], "after": ["<leader>", "<leader>", "j"] },
+    { "before": ["<C-k>"], "after": ["<leader>", "<leader>", "k"] },
+    { "before": ["<leader>", "d"], "commands": [{ "command": "editor.action.addSelectionToNextFindMatch" }] },
+    { "before": ["<leader>", "e"], "commands": [{ "command": "editor.action.addSelectionToPreviousFindMatch" }] },
+    { "before": ["<leader>", "u"], "commands": [{ "command": "cursorUndo" }] },
+    { "before": ["<leader>", "k", "d"], "commands": [{ "command": "editor.action.moveSelectionToNextFindMatch" }] },
+    { "before": ["<leader>", "k", "e"], "commands": [{ "command": "editor.action.moveSelectionToPreviousFindMatch" }] },
+    { "before": ["<leader>", "l"], "commands": [{ "command": "editor.action.selectHighlights" }] }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["p"],
-      "after": ["\"", "_", "d", "P"]
-    },
-    {
-      "before": [">"],
-      "after": [">", "g", "v"]
-    },
-    {
-      "before": ["<"],
-      "after": ["<", "g", "v"]
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    }
+    { "before": ["p"], "after": ["\"", "_", "d", "P"] },
+    { "before": [">"], "after": [">", "g", "v"] },
+    { "before": ["<"], "after": ["<", "g", "v"] },
+    { "before": ["L"], "after": ["$"] },
+    { "before": ["H"], "after": ["^"] },
+    { "before": ["c"], "after": ["\"", "_", "c"] },
+    { "before": ["d"], "after": ["\"", "_", "d"] },
+    { "before": ["<leader>", "<leader>", "d"], "after": ["d"] }
   ],
   "vim.operatorPendingModeKeyBindings": [
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    }
+    { "before": ["L"], "after": ["$"] },
+    { "before": ["H"], "after": ["^"] }
   ],
   "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    },
-    {
-      "before": [";", ";"],
-      "commands": ["editor.action.triggerSuggest"]
-    }
+    { "before": ["j", "j"], "after": ["<Esc>"] },
+    { "before": [";", ";"], "commands": ["editor.action.triggerSuggest"] }
   ],
   "vim.visualstar": true,
   "vim.hlsearch": true,
@@ -206,5 +98,7 @@
   "vim.useSystemClipboard": true,
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  },
+  "editor.tabSize": 2,
+  "prettier.printWidth": 120
 }
