@@ -17,6 +17,23 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": [],
+      "icon": "terminal-cmd",
+      "env": {
+        "path": "C:\\Program Files\\Git\\bin;${env:path}"
+      }
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "editor.renderWhitespace": "all",
   "editor.minimap.enabled": false,
@@ -100,5 +117,9 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "editor.tabSize": 2,
-  "prettier.printWidth": 120
+  "prettier.printWidth": 120,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "files.eol": "\n"
 }

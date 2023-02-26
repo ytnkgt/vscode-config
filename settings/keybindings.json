@@ -51,12 +51,12 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+alt+j",
+    "key": "ctrl+j",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+alt+k",
+    "key": "ctrl+k",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
@@ -89,5 +89,5 @@
     "key": "ctrl+shift+oem_3",
     "command": "workbench.action.terminal.new",
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  }
+  },
 ]
